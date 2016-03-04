@@ -22,9 +22,16 @@ mouseMove.addEventListener("mouseover", function(event){
     document.getElementById("output-target").innerHTML  = "You moved your mouse over the header";
 });
 
-
 //The mouseout event is fired when a pointing device (usually a mouse) 
 //is moved off the element that has the listener attached or off one of its children.
 mouseMove.addEventListener("mouseout", function(event){
   document.getElementById("output-target").innerHTML  = "You left me!!";
+});
+
+//add event listener on the input box so that text entered is written as it is typed to the 
+//output div
+var inputBox = document.getElementById("keypress-input");
+
+inputBox.addEventListener("input", function(event){
+   document.getElementById("output-target").innerHTML = document.getElementById("keypress-input").value ;
 });
