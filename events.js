@@ -72,11 +72,23 @@ roundedButton.addEventListener("click", function() {
     guineaPig.classList.toggle("round");  
 });
 
+//The first section's text should be bold.
+articleSection[0].classList.add("boldSection");
+
+//The last section's text should be bold and italicized.
+articleSection[articleSection.length-1].classList.add("lastSection")
 
 
+//buttons should appear as block elements
+var buttons = document.getElementsByTagName("button");
 
+buttonsToBlock(buttons); 
 
-
+function buttonsToBlock(buttons) {
+  for (var i = 0; i , buttons.length; i++){
+    buttons[i].classList.add("blockButton");
+  }
+};
 
 
  

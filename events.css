@@ -6,11 +6,6 @@
   color: blue;
 }
 
-.WTF {
-  border: 1px solid green;
-}
-
-
 .wrap {
   border: 2px solid red;
 }
@@ -19,5 +14,16 @@
  border-radius: 15px;
 }
 
+.boldSection{
+  font-weight: bold;
+}
 
+.lastSection{
+  font-weight: bold;
+  font-style: italic;
+}
 
+.blockButton{
+  display: block;
+  margin: 5% auto;
+}
